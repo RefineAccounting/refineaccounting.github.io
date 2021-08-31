@@ -1,51 +1,148 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <head>
+        <title>
+            {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} –
+            {{ site.description }}
+        </title>
 
-    {% include meta.html %}
+        {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ site.baseurl }}/style.css"
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="{{ site.name }} - {{ site.description }}"
+            href="{{ site.baseurl }}/feed.xml"
+        />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+        <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <body>
+        <div id="offer" class="offer">Berencana memulai software keuangan Anda sendiri? <br /><a href="https://refineaccounting.com/fitur-kami">Mulai Sekarang</a></div>
+        <div id="side-nav">
+            <ul>
+                <li>Memulai
+                    <ul>
+                        <li>Persiapan Data Master</li>
+                        <li>Persiapan Saldo Awal</li>
+                        <li>Pembuatan Hak Akses & Admin</li>
+                    </ul>
+                </li>
+                <li>Mengelola
+                    <ul>
+                        <li>Kelola Pembelian
+                            <ul>
+                                <li>Pesananan Pembelian</li>
+                                <li>Penerimaan Barang</li>
+                                <li>Faktur Pembelian</li>
+                                <li>Retur Pembelian</li>
+                                <li>Surat Jalan Retur Pembelian</li>
+                            </ul>
+                        </li>
+                        <li>Kelola Penjualan
+                            <ul>
+                                <li>Pesananan Pembelian</li>
+                                <li>Penerimaan Barang</li>
+                                <li>Faktur Pembelian</li>
+                                <li>Retur Pembelian</li>
+                                <li>Surat Jalan Retur Pembelian</li>
+                            </ul>
+                        </li>
+                        <li>Kelola Persediaan
+                            <ul>
+                                <li>Pesananan Pembelian</li>
+                                <li>Penerimaan Barang</li>
+                                <li>Faktur Pembelian</li>
+                                <li>Retur Pembelian</li>
+                                <li>Surat Jalan Retur Pembelian</li>
+                            </ul>
+                        </li>
+                        <li>Kelola Keuangan
+                            <ul>
+                                <li>Transaksi Masuk
+                                    <ul>
+                                        <li>Pelunasan Piutang</li>
+                                        <li>Pelunasan Uang Muka Penjualan</li>
+                                        <li>Pelunasan Coa Lain-lain</li>
+                                    </ul>
+                                </li>
+                                <li>Transaksi Keluar
+                                    <ul>
+                                        <li>Pembayaran Hutang</li>
+                                        <li>Pembayaran Uang Muka Pembelian</li>
+                                        <li>Pembayaran Aset</li>
+                                        <li>Pembayaran Coa Lain-lain</li>
+                                    </ul>
+                                </li>
+                                <li>Giro Dibuka</li>
+                                <li>Giro Diterima</li>
+                                <li>Transfer uang / Pemindahbukuan</li>
+                                <li>Mutasi Kas</li>
+                                <li>Mutasi Bank</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Akuntansi & Laporan
+                    <ul>
+                        <li>Jurnal Memorial</li>
+                        <li>Kunci & Tutup Periode</li>
+                        <li>Laporan Periode</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="{{ site.baseurl }}/" class="site-avatar"
+                        style="display: block;"><img src="{{ site.avatar }}"
+                    /></a>
+                    <p class="site-description">{{ site.description }}</p>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+                    <!-- <nav>
+                        <a href="{{ site.baseurl }}/">Blog</a>
+                        <a href="{{ site.baseurl }}/about">About</a> -->
+                    </nav>
+                </header>
+            </div>
+        </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+        <div id="main" role="main" class="container">{{ content }}</div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">{% include svg-icons.html %}</footer>
+            </div>
+        </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+        {% include analytics.html %}
 
-    {% include analytics.html %}
-  </body>
+        <script>
+            let offerElm = document.getElementById("offer");
+            document.body.onscroll = function() {
+                console.log("aa", document.documentElement.scrollTop);
+                let scrollTop = document.documentElement.scrollTop;
+                console.log(offerElm.classList.contains("show"), scrollTop > 150);
+                if (scrollTop > 150 && !offerElm.classList.contains("show")) {
+                    console.log('yesss');
+                    offerElm.classList.toggle("show", true)
+                }
+
+                if (scrollTop < 150 && offerElm.classList.contains("show")) {
+                    offerElm.classList.toggle("show", false);
+                }
+            }
+        </script>
+    </body>
 </html>
