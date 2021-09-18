@@ -21,14 +21,13 @@ penjelasan memulai Refine Accounting.
         - [Kelola Produk](#kelola-produk)
         - [Konversi Satuan Produk](#konversi-satuan-produk)
         - [Grup Produk / Parcel](#grup-produk--parcel)
-        - Harga Spesial
-1. Saldo awal
-    1. Saldo awal Kas & Bank
-    1. Saldo awal Hutang
-    1. Saldo awal Piutang
-    1. Saldo awal Persediaan
-    1. Saldo awal Uang Muka Pembelian
-    1. Saldo awal Uang Muka Penjualan
+        - [Harga Spesial](#harga-spesial)
+1. [Saldo awal](#saldo-awal)
+    1. [Saldo awal Kas & Bank](#saldo-awal-kas--bank)
+    1. [Saldo awal Hutang](#saldo-awal-hutang)
+    1. [Saldo awal Piutang](#saldo-awal-piutang)
+    1. [Saldo awal Persediaan](#saldo-awal-persediaan)
+    1. [Saldo awal Uang Muka Pembelian & Penjualan](#saldo-awal-uang-muka-pemnbelian--penjualan)
     1. Saldo awal Giro Dibuka & Diterima
 
 ## Mempersiapkan Master Data
@@ -217,3 +216,117 @@ Cara input harga spesial produk sebagai berikut:
     - Jumlah Diskon (Wajib diisi): Rupiah / % discount
 
 Anda bisa input beberapa kali harga spesial, secara otomatis pada menu penjualan akan menghitung harga spesial jika memenuhi semua kriteria yang sudah Anda terapkan.
+
+## Saldo Awal
+
+Setelah mengisi data master dengan benar, langkah selanjutnya adalah mengisi saldo awal. Saldo awal penting untuk menghitung nilai awal perusahaan Anda seperti: Hutang, Piutang, Persediaan, Saldo Kas & Bank, Dll.
+
+Untuk itu sebelum mengisi data saldo awal, disarankan untuk opname data-data terlebih dahulu. Karena fungsinya untuk menghitung nilai awal, maka nilai awal efeknya sangat menentukan hasil akhir dari setiap laporan.
+
+Untuk mengisi saldo awal ada 2 cara pertama melalui tampilan utama dan yang kedua melalui excel. Untuk file excel sudah kami sediakan bisa Anda unduh [disini]()
+
+### Saldo Awal Kas & Bank
+
+1. Mengisi saldo awal menggunakan tampilan utama
+    1. Masuk ke menu `Instalasi`
+    2. Pada step yang pertama ada pilihan Install menggunakan excel atau memasukkan data secara manual. Pilih manual dengan klik tombol `Mulai instalasi`
+    3. Kemudian Skip / Save hingga pada step ke halaman 2. Pada halaman ini Anda akan melihat semua data kas & bank yang sudah Anda isi, kolom saldo awal & tanggal saldo awal tersebut.
+    4. Isi kolom saldo awal dengan nilai saldo awal Anda. Untuk tanggal kami sarankan mengisi di tanggal terakhir sebelum bulan Anda memulai. Contoh Anda memulai input pada bulan September 2021, maka isi lah tanggalnya yaitu 31 Agustus 2021.
+    5. Jika sudah klik `Simpan`
+2. Mengisi saldo awal menggunakan excel
+    1. Setelah mengunduh file excel kami, silahkan pilih sheet `KAS/BANK`.
+    2. Penjelasan kolom:
+        - `PERKIRAAN` dengan nomor COA dari Kas / Bank tersebut. Contoh untuk `KAS KECIL` coanya adalah 1111 maka isi kolom `PERKIRAAN` dengan 1111.
+        - `NAMA KAS/BANK` adalah nama dari Kas / Bank tersebut (tidak harus diisi).
+        - `JUMLAH` adalah nilai saldo awal dari Kas / Bank tersebut (harus diisi).
+        - `PER TGL.` adalah tanggal dari saldo awal.
+
+### Saldo Awal Hutang
+
+1. Mengisi saldo awal menggunakan tampilan utama
+    1. Masuk ke menu `Instalasi`
+    2. Pada step yang pertama ada pilihan Install menggunakan excel atau memasukkan data secara manual. Pilih manual dengan klik tombol `Mulai instalasi`
+    3. Kemudian Skip / Save hingga pada step ke halaman 3.
+    4. Klik tombol `Tambah Supplier` untuk menambahkan data hutang ke supplier. Disini hanya akan mengisi nilai hutang bukan item yang Anda beli di Supplier.
+    5. Penjelasan pengisian kolom sebagai berikut:
+        - Kolom `Supplier` untuk memilih supplier (wajib diisi).
+        - Kolom `No. Dokumen` umumnya diisi dengan nomor nota hutang. Nantinya akan dijadikan referensi di keuangan untuk pelunasan hutang tersebut.
+        - Kolom `Saldo awal` adalah nilai dari nota / hutang Anda.
+        - Kolom `tanggal` adalah tanggal terhitung hutang. Untuk tanggal kami sarankan mengisi di tanggal terakhir sebelum bulan Anda memulai. Contoh Anda memulai input pada bulan September 2021, maka isi lah tanggalnya yaitu 31 Agustus 2021.
+    6. Jika sudah klik `Simpan & Lanjutkan`
+2. Mengisi saldo awal menggunakan excel
+    1. Setelah mengunduh file excel kami, silahkan pilih sheet `HUTANG`.
+    2. Penjelasan kolom:
+        - `TANGGAL INVOICE` adalah tanggal saldo hutang Anda.
+        - `NO. INVOICE` adalah umumnya diisi dengan nomor nota hutang. Nantinya akan dijadikan referensi di keuangan untuk pelunasan hutang tersebut.
+        - `KODE SUPPLIER` Anda dapat menemukan kode supplier di menu `Master > Supplier > Supplier`. Di daftar supplier akan muncul informasi ringkas & kode supplier di bawah nama supplier. Contoh: **SUPPLIER001**.
+        - `JUMLAH (RP.)` adalah nilai saldo awal.
+
+### Saldo Awal Piutang
+
+1. Mengisi saldo awal menggunakan tampilan utama
+    1. Masuk ke menu `Instalasi`
+    2. Pada step yang pertama ada pilihan Install menggunakan excel atau memasukkan data secara manual. Pilih manual dengan klik tombol `Mulai instalasi`
+    3. Kemudian Skip / Save hingga pada step ke halaman 4.
+    4. Klik tombol `Tambah Customer` untuk menambahkan data hutang ke customer. Disini hanya akan mengisi nilai hutang bukan item yang Anda beli di Customer.
+    5. Penjelasan pengisian kolom sebagai berikut:
+        - Kolom `Customer` untuk memilih customer (wajib diisi).
+        - Kolom `No. Dokumen` umumnya diisi dengan nomor nota piutang. Nantinya akan dijadikan referensi di keuangan untuk pelunasan piutang tersebut.
+        - Kolom `Saldo awal` adalah nilai dari nota / piutang Anda.
+        - Kolom `tanggal` adalah tanggal terhitung piutang. Untuk tanggal kami sarankan mengisi di tanggal terakhir sebelum bulan Anda memulai. Contoh Anda memulai input pada bulan September 2021, maka isi lah tanggalnya yaitu 31 Agustus 2021.
+    6. Jika sudah klik `Simpan & Lanjutkan`
+2. Mengisi saldo awal menggunakan excel
+    1. Setelah mengunduh file excel kami, silahkan pilih sheet `PIUTANG`.
+    2. Penjelasan kolom:
+        - `TANGGAL INVOICE` adalah tanggal saldo piutang Anda.
+        - `NO. INVOICE` adalah umumnya diisi dengan nomor nota piutang. Nantinya akan dijadikan referensi di keuangan untuk pelunasan piutang tersebut.
+        - `KODE CUSTOMER` Anda dapat menemukan kode customer di menu `Master > Customer > Customer`. Di daftar customer akan muncul informasi ringkas & kode customer di bawah nama customer. Contoh: **CUSTOMER001**.
+        - `JUMLAH (RP.)` adalah nilai saldo awal.
+
+### Saldo Awal Persediaan
+
+1. Mengisi saldo awal menggunakan tampilan utama
+    1. Masuk ke menu `Instalasi`
+    2. Pada step yang pertama ada pilihan Install menggunakan excel atau memasukkan data secara manual. Pilih manual dengan klik tombol `Mulai instalasi`
+    3. Kemudian Skip / Save hingga pada step ke halaman 5.
+    4. Klik tombol `Tambah Produk` untuk menambahkan data persediaan awal produk.
+    5. Penjelasan pengisian kolom sebagai berikut:
+        - Kolom `Produk` untuk memilih produk (wajib diisi).
+        - Kolom `Saldo Awal (Qty)` nilai saldo awal persediaan secara Qty sesuai dengan satuan pada produk.
+        - Kolom `Saldo Awal (Rp)` nilai saldo awal persediaan secara Rupiah sesuai dengan satuan pada produk.
+        - Kolom `Gudang` untuk memilih lokasi gudang.
+    6. Jika sudah klik `Simpan & Lanjutkan`
+2. Mengisi saldo awal menggunakan excel
+    1. Setelah mengunduh file excel kami, silahkan pilih sheet `PERSEDIAAN`.
+    2. Penjelasan kolom:
+        - `KODE BARANG` Anda bisa melihat kode barang (SKU) di menu `Master > Produk > Produk`, pada daftar produk Anda akan melihat kode barang di bawah nama produk.
+        - `KUANTITAS AWAL` nilai saldo awal persediaan secara Qty sesuai dengan satuan pada produk.
+        - `HARGA SATUAN` nilai saldo awal harga satuan persediaan (Rp).
+        - `SALDO AWAL (Rp.)` adalah kuantitas awal \* harga satuan.
+        - `Per Tgl.` adalah tanggal terhitung saldo awal persediaan. Untuk tanggal kami sarankan mengisi di tanggal terakhir sebelum bulan Anda memulai. Contoh Anda memulai input pada bulan September 2021, maka isi lah tanggalnya yaitu 31 Agustus 2021.
+        - Kolom `Gudang` untuk memilih lokasi gudang.
+
+### Saldo Awal Uang Muka Pembelian / Penjualan
+
+Untuk menu saldo awal uang muka pembelian / penjualan saat ini hanya dapat diisi melalui excel.
+
+1. Setelah mengunduh file excel kami, silahkan pilih sheet `UANG MUKA`.
+2. Penjelasan kolom:
+    - `JENIS` berisi `PEMBELIAN` untuk uang muka pembelian dan `PENJUALAN` untuk uang muka penjualan.
+    - `KODE SUPPLIER/CUST` berisi kode supplier / customer yang bersangkutan. Anda dapat menemukan kode supplier / customer pada menu `Daftar Customer` atau `Daftar Supplier`.
+    - `PERKIRAAN` adalah COA Kas / Bank yang menerima atau mengeluarkan uang muka.
+    - `JUMLAH` adalah nilai uang muka yang sifatnya global bukan uang muka per transaksi.
+    - `Per Tgl.` adalah tanggal terhitung saldo awal persediaan. Untuk tanggal kami sarankan mengisi di tanggal terakhir sebelum bulan Anda memulai. Contoh Anda memulai input pada bulan September 2021, maka isi lah tanggalnya yaitu 31 Agustus 2021.
+
+### Saldo Awal Giro Dibuka / Diterima
+
+Untuk menu saldo awal giro dibuka / diterima saat ini hanya dapat diisi melalui excel.
+
+1. Setelah mengunduh file excel kami, silahkan pilih sheet `GIRO`.
+2. Penjelasan kolom:
+    - `JENIS GIRO` berisi `DIBUKA` untuk giro dibuka ke supplier dan `DITERIMA` untuk giro diterima dari customer.
+    - `PERKIRAAN` adalah COA Kas / Bank yang menerima atau mengeluarkan giro.
+    - `SUPPLIER/CUST` berisi kode supplier / customer yang bersangkutan. Anda dapat menemukan kode supplier / customer pada menu `Daftar Customer` atau `Daftar Supplier`.
+    - `JUMLAH` adalah nilai uang muka yang sifatnya global bukan uang muka per transaksi.
+    - `TGL. DITERIMA` adalah tanggal terhitung giro dibuka / diterima.
+    - `TGL. JATUH TEMPO` adalah tanggal jatuh tempo giro.
