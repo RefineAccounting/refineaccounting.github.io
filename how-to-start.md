@@ -28,7 +28,7 @@ penjelasan memulai Refine Accounting.
     1. [Saldo awal Piutang](#saldo-awal-piutang)
     1. [Saldo awal Persediaan](#saldo-awal-persediaan)
     1. [Saldo awal Uang Muka Pembelian & Penjualan](#saldo-awal-uang-muka-pemnbelian--penjualan)
-    1. Saldo awal Giro Dibuka & Diterima
+    1. [Saldo awal Giro Dibuka & Diterima](#saldo-awal-giro-dibuka--diterima)
 
 ## Mempersiapkan Master Data
 
