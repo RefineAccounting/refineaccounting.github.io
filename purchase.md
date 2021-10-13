@@ -195,7 +195,7 @@ Sistem retur yang kami gunakan adalah pengurangan nilai Hutang.
 1. `Jumlah Uang Muka %` nominal uang muka dalam persentase %.
 1. `Jumlah Uang Muka` nominal uang muka dalam rupiah.
 
-### Penjelaan Status
+### Penjelasan Status
 
 1. PENDING / MENUNGGU adalah Uang Muka Pembelian baru dibuat dan menunggu pelunasan
 2. PAID / LUNAS adalah Uang Muka Pembelian telah lunas dibayar
