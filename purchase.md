@@ -106,13 +106,13 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Jika menggunakan sistem pesanan, maka Faktur Pembelian otomatis terbuat jika membuat Laporan Penerimaan Baranag.
+1. Jika menggunakan sistem pesanan, maka Faktur Pembelian otomatis terbuat jika membuat Laporan Penerimaan Barang.
 2. Jika tidak menggunakan sistem pesanan, Anda dapat membuat faktur pembelian. Klik menu Pembelian > Faktur Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
 3. Jika ada kesalahan untuk merubah data (baik itu menggunakan sistem pesanan atau tanpa pesanan). Cari data yang ingin di ubah dalam `Daftar Faktur Pembelian` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
 
 ### Penjelasan Kolom pada Form Faktur Pembelian
 
-1. `Supplier` ketika memilih supplier, secara otomatis sistem akan mengambil seluruh Pesanan Pembelian dengan supplier tersebut dan status Pesanan Pembelian adalah _APPROVED_.
+1. `Supplier` adalah supplier untuk faktur pembelian tersebut.
 1. `Gudang` adalah gudang penerima barang. Sistem akan mencatat mutasi persediaan masuk pada gudang tersebut.
 1. `No. Dokumen` adalah nomor dokumen faktur pembelian. Terbuat otomatis dan reset setiap bulan.
 1. `Tanggal` adalah tanggal faktur pembelian. Jika merubah tanggal yang sudah dibuat dan tanggal berbeda bulan,
@@ -163,7 +163,7 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 1. `No. Dokumen` adalah nomor dokumen surat jalan retur. Terbuat otomatis dan reset setiap bulan.
 1. `Tanggal` adalah tanggal surat jalan retur. Jika merubah tanggal pesanan yang sudah dibuat dan tanggal berbeda bulan,
    maka sistem **secara otomatis merubah** nomor dokumen mengikuti urutan nomor pada bulan tersebut.
-1. `Catatan` untuk menulis catatan-catatan pada pesanan pembelian
+1. `Catatan` untuk menulis catatan-catatan pada retur pembelian
 1. `Daftar Penerimaan Barang` terdiri nomor penerimaan barang, informasi barang diterima, kuantitas penerimaan barang, kuantitas telah diretur, kuantitas yang akan diretur saat ini, satuan dan harga satuan.
 1. Tombol `Tambah No. Penerimaan Barang` untuk menambahkan barang yang akan diretur.
 
@@ -186,12 +186,12 @@ Sistem retur yang kami gunakan adalah pengurangan nilai Hutang.
 
 ### Penjelasan Kolom pada Form Uang Muka Pembelian
 
-1. `Supplier` adalah supplier dari pesanan pembelian.
+1. `Supplier` adalah supplier yang akan melakukan transaksi uang muka pembelian.
 1. `Daftar Pesanan Pembelian` adalah pesanan pembelian dari supplier tersebut.
 1. `No. Dokumen` adalah nomor dokumen surat jalan retur. Terbuat otomatis dan reset setiap bulan.
 1. `Tanggal` adalah tanggal surat jalan retur. Jika merubah tanggal pesanan yang sudah dibuat dan tanggal berbeda bulan,
    maka sistem **secara otomatis merubah** nomor dokumen mengikuti urutan nomor pada bulan tersebut.
-1. `Catatan` untuk menulis catatan-catatan pada pesanan pembelian
+1. `Catatan` untuk menulis catatan-catatan pada uang muka pembelian
 1. `Jumlah Uang Muka %` nominal uang muka dalam persentase %.
 1. `Jumlah Uang Muka` nominal uang muka dalam rupiah.
 
