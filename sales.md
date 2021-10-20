@@ -26,20 +26,26 @@ mengelola data penjualan dengan Refine Accounting
 3. [Menu Penerimaan Barang](https://youtu.be/s6ieqLwrWv4)
 4. [Menu Faktur Penjualan](https://youtu.be/8Wa8vJq-Ka8)
 
+# Alur Sistem
+
+Sebelum masuk ke teknis cara input, di bagian ini kami akan menjelaskan beberapa alur sistem untuk memudahkan Anda memahami bagaimana memulai input di modul penjualan.
+
+Ada 2 penjelasan alur sistem yaitu alur sistem penjualan dan alur sistem uang muka penjualan.
+
 ## Alur Sistem Penjualan
 
 **Penjelasan**
 
 Alur sistem penjualan pada Refine Accounting ada 2 garis besar. Pertama menggunakan sistem pemesanan dimana setiap surat jalan / faktur penjualan harus didasarkan pada sebuah dokumen pesanan. Kedua tanpa menggunakan sistem pemesanan.
 
-Untuk sistem pertama sebagai berikut:
+Untuk sistem pertama **dengan sistem pesanan penjualan dari customer** sebagai berikut:
 
 1. Admin penjualan mengirimkan penawaran harga atas beberapa barang.
 2. Admin penjualan menyetujui harga dan **input pesanan penjualan (SO)** kepada customer X dan barang-barang yang akan dipesan.
 3. SO ini dikirimkan ke customer untuk diproses.
 4. Pengiriman barang ke customer oleh bagian gudang, secara otomatis sistem akan **membuat faktur penjualan (INVOICE)** dan **mutasi masuk pada persediaan**.
 
-Sedangkan, untuk sistem kedua sebagai berikut:
+Sedangkan, untuk sistem kedua **tanpa sistem pesanan dari customer** sebagai berikut:
 
 1. Admin penjualan melakukan **input faktur penjualan** ke customer X dan barang-barang yang akan dijual, secara otomatis sistem akan membuat **mutasi masuk pada persediaan**. Disini perbedaannya sistem tidak dapat melakukan pengecekan kebenaran qty dipesan dan dikirim jadi ada resiko qty dikirim berbeda dengan yang dipesan.
 
@@ -59,11 +65,11 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat pesanan penjualan. Klik menu Penjualan > Pesanan Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah pesanan penjualan sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Pesanan Penjualan` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
-4. Jika hanya merubah status Anda bisa klik aksi `Disetujui`.
-5. Jika ada kebutuhan untuk menutup Pesanan Penjualan padahal belum dikirim full, Anda bisa klik aksi `Tutup`
+1. **Buat pesanan penjualan:** Cara membuat pesanan penjualan yaitu klik menu Penjualan > Pesanan Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah pesanan penjualan:** Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Pesanan Penjualan` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+3. **Menyetujui pesanan penjualan:** Aksi ini digunakan untuk menyetujui pesanan penjualan yang sudah dibuat.
+4. **Menutup pesanan penjualan:** Aksi ini digunakan untuk menutup pesanan penjualan meskipun barang belum diterima secara keseluruhan. Untuk menutup pesanan penjualan klik menu Penjualan > Pesanan Penjualan. Pada daftar pesanan penjualan, di bagian kanan terdapat kolom `Aksi` dan tombol `Tutup`. Klik tombol `Tutup` untuk menutup pesanan penjualan tersebut.
+5. **Hapus pesanan penjualan:** Pesanan penjualan hanya bisa dihapus jika status `Pending`.
 
 ### Penjelasan Kolom pada Form Pesanan Penjualan
 
@@ -77,7 +83,7 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 7. `Diskon`
 8. `PPN` kolom ini terisi otomatis jika status perusahaan adalah PKP.
 
-### Penjelaan Status
+### Penjelasan Status
 
 1. PENDING / MENUNGGU adalah SO baru dibuat dan menunggu verifikasi
 2. APPROVED / DISETUJUI adalah SO sudah disetujui dan terhubung dengan menu Surat Jalan
@@ -88,8 +94,11 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat laporan surat jalan. Klik menu Penjualan > Surat Jalan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Surat Jalan` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat surat jalan:** Cara membuat surat jalan yaitu klik menu Pembelian > Laporan Penerimaan Barang. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah surat jalan:** Aksi ini untuk merubah informasi surat jalan.
+    - Penerimaan barang hanya bisa diubah jika status pembayaran atas faktur penjualan adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah surat jalan, cari data yang ingin diubah di daftar laporan surat jalan setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus surat jalan:** Penerimaan barang dapat dihapus jika status pembayaran terhadap faktur penjualan adalah menunggu pembayaran (`Pending`).
 
 ### Penjelasan Kolom pada Form Surat Jalan
 
@@ -105,9 +114,13 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Jika menggunakan sistem pesanan, maka Faktur Penjualan otomatis terbuat jika membuat Surat Jalan.
-2. Jika tidak menggunakan sistem pesanan, Anda dapat membuat faktur penjualan. Klik menu Penjualan > Faktur Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-3. Jika ada kesalahan untuk merubah data (baik itu menggunakan sistem pesanan atau tanpa pesanan). Cari data yang ingin di ubah dalam `Daftar Faktur Penjualan` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat faktur penjualan:**
+    - Jika menggunakan sistem pesanan, maka Faktur Pembelian otomatis terbuat jika membuat Laporan Penerimaan Barang.
+    - Jika tidak menggunakan sistem pesanan, Anda dapat membuat faktur penjualan. Klik menu Pembelian > Faktur Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah faktur penjualan:** Aksi ini untuk merubah informasi faktur penjualan.
+    - Faktur penjualan dapat dihapus jika status pembayaran adalah belum dibayar (`Pending`).
+    - Untuk merubah faktur penjualan, cari data yang ingin diubah di daftar faktur penjualan setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus faktur penjualan:** Aksi ini untuk menghapus faktur penjualan. Faktur penjualan dapat dihapus jika status pembayaran adalah belum dibayar (`Pending`).
 
 ### Penjelasan Kolom pada Form Faktur Penjualan
 
@@ -131,9 +144,11 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat penerimaan barang retur. Klik menu Penjualan > Penerimaan Barang Retur. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah penerimaan barang retur penjualan sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Penerimaan Barang Retur` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat penerimaan barang retur:** Klik menu Penjualan > Surat Jalan Retur. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah penerimaan barang retur:** Aksi ini untuk merubah informasi penerimaan barang retur.
+    - Surat jalan retur hanya bisa diubah jika status pembayaran atas nota retur pembelian adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah penerimaan barang retur, cari data yang ingin diubah di daftar penerimaan barang retur setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus penerimaan barang retur:** Aksi ini untuk menghapus penerimaan barang retur. Surat jalan retur hanya bisa dihapus jika status pembayaran atas nota retur pembelian adalah menunggu pembayaran (`Pending`).
 
 ### Penjelasan Kolom pada Form Penerimaan Barang Retur Penjualan
 
@@ -150,9 +165,11 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat retur penjualan. Klik menu Penjualan > Retur Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah retur penjualan sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Retur Penjualan` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat retur penjualan:** Klik menu Penjualan > Retur Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah retur penjualan:** Aksi ini untuk merubah informasi retur penjualan.
+    - Retur penjualan hanya bisa diubah jika status pembayaran adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah retur penjualan, cari data yang ingin diubah di daftar retur penjualan setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus retur penjualan:** Aksi ini untuk menghapus retur penjualan. Retur pembelian hanya bisa dihapus jika status pembayaran adalah menunggu pembayaran (`Pending`).
 
 ### Penjelasan Kolom pada Form Retur Penjualan
 
@@ -173,14 +190,34 @@ Alur sistem uang muka penjualan pada Refine Accounting adalah sebagai berikut:
 **Note**
 Sistem retur yang kami gunakan adalah pengurangan nilai Piutang.
 
+## Piutang Usaha
+
+**Penjelasan**
+Menu ini digunakan untuk memantau daftar piutang usaha yang masih menunggu pembayaran. Menu ini secara otomatis akan 2 sumber piutang usaha yaitu `Faktur Penjualan` dan `Retur Penjualan`, Anda **tidak dapat menambahkan piutang usaha** di menu ini.
+
+Penjelasan kolom di daftar piutang usaha:
+
+-   `Tanggal` adalah tanggal faktur penjualan / retur penjualan
+-   `Kode Transaksi` adalah nomor nota penjualan / nota retur penjualan
+-   `Faktur Penjualan` adalah nilai faktur penjualan
+-   `Hutang` adalah nilai sisa piutang
+-   `Tanggal Jatuh Tempo` adalah tanggal jatuh tempo piutang usaha
+
+Ada beberapa filter yang dapat Anda gunakan untuk memudahkan pencarian sebagai berikut:
+
+-   `Supplier` saring untuk melihat daftar piutang berdasarkan supplier
+-   `Tanggal` saring untuk melihat daftar piutang dalam periode tertentu
+
 ## Uang Muka Penjualan
 
 ### Aktivitas Utama
 
-1. Buat uang muka penjualan. Klik menu Penjualan > Uang Muka Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah retur penjualan sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Retur Penjualan` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
-4. Nilai pada uang muka penjualan dapat digunakan sebagai pembayaran `Faktur Penjualan`. Tekan tombol `gunakan` di kolom aksi untuk melihat daftar faktur penjualan dari Uang Muka tersebut, kemudian pilih faktur penjualan yang ingin dibayarkan.
+1. **Buat uang muka penjualan:** Klik menu Penjualan > Uang Muka Penjualan. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah uang muka penjualan:** Aksi ini untuk merubah informasi uang muka penjualan.
+    - Uang muka penjualan hanya bisa diubah jika status pembayaran adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah uang muka penjualan, cari data yang ingin diubah di daftar uang muka penjualan setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus uang muka penjualan:** Aksi ini untuk menghapus uang muka penjualan. Uang muka penjualan hanya bisa dihapus jika status pembayaran adalah menunggu pembayaran (`Pending`).
+4. **Gunakan uang muka penjualan:** Aksi ini untuk menggunakan uang muka sebagai pembayaran Faktur Penjualan. Tekan tombol `gunakan` di kolom aksi untuk melihat daftar faktur penjualan dari Uang Muka tersebut, kemudian pilih faktur penjualan yang ingin dibayarkan.
 
 ### Penjelasan Kolom pada Form Uang Muka Penjualan
 

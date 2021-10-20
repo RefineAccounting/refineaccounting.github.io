@@ -8,8 +8,6 @@ title: Mengelola Data Pembelian
 Di halaman ini kami akan memandu Anda untuk mengelola data-data pembelian. Berikut daftar isi
 mengelola data pembelian dengan Refine Accounting
 
-1. [Alur Sistem Pembelian](#alur-sistem-pembelian)
-1. [Alur Sistem Uang Muka Pembelian](#alur-sistem-uang-muka-pembelian)
 1. [Pesanan Pembelian](#pesanan-pembelian)
 1. [Laporan Penerimaan Barang](#penerimaan-barang)
 1. [Faktur Pembelian](#faktur-pembelian)
@@ -26,13 +24,19 @@ mengelola data pembelian dengan Refine Accounting
 3. [Menu Penerimaan Barang](https://youtu.be/s6ieqLwrWv4)
 4. [Menu Faktur Pembelian](https://youtu.be/8Wa8vJq-Ka8)
 
+# Alur Sistem
+
+Sebelum masuk ke teknis cara input, di bagian ini kami akan menjelaskan beberapa alur sistem untuk memudahkan Anda memahami bagaimana memulai input di modul pembelian.
+
+Ada 2 penjelasan alur sistem yaitu alur sistem pembelian dan alur sistem uang muka pembelian.
+
 ## Alur Sistem Pembelian
 
 **Penjelasan**
 
 Alur sistem pembelian pada Refine Accounting ada 2 garis besar. Pertama menggunakan sistem pemesanan dimana setiap penerimaan barang / faktur pembelian harus didasarkan pada sebuah dokumen pesanan. Kedua tanpa menggunakan sistem pemesanan.
 
-Untuk sistem pertama sebagai berikut:
+Untuk sistem pertama **dengan sistem pesanan pembelian ke supplier** sebagai berikut:
 
 1. Admin pembelian mengirimkan permintaan harga atas beberapa barang.
 2. Admin pembelian menyetujui harga dan **input pesanan pembelian (PO)** kepada supplier X dan barang-barang yang akan dipesan.
@@ -40,7 +44,7 @@ Untuk sistem pertama sebagai berikut:
 4. Pengiriman barang dari supplier masuk ke bagian Gudang. Gudang menerima barang beserta dengan surat jalan dari supplier.
 5. Pihak Gudang melakukan pencocokan data antara SJ & PO. Jika sudah cocok, pihak Gudang melakukan **input laporan penerimaan barang (LPB)** dan secara otomatis sistem akan **membuat faktur pembelian (FB)** dan **mutasi masuk pada persediaan**.
 
-Sedangkan, untuk sistem kedua sebagai berikut:
+Sedangkan, untuk sistem kedua **tanpa sistem pesanan ke supplier** sebagai berikut:
 
 1. Admin pembelian melakukan **input faktur pembelian** ke supplier X dan barang-barang yang akan dibeli, secara otomatis sistem akan membuat **mutasi masuk pada persediaan**. Disini perbedaannya sistem tidak dapat melakukan pengecekan kebenaran qty dipesan dan diterima jadi ada resiko qty diterima berbeda dengan yang dipesan.
 
@@ -60,10 +64,11 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat pesanan pembelian. Klik menu Pembelian > Pesanan Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah pesanan pembelian sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Pesanan Pembelian` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
-4. Jika hanya merubah status Anda bisa klik aksi `Disetujui`.
+1. **Buat pesanan pembelian:** Cara membuat pesanan pembelian yaitu klik menu Pembelian > Pesanan Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah pesanan pembelian:** Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Pesanan Pembelian` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+3. **Menyetujui pesanan pembelian:** Aksi ini digunakan untuk menyetujui pesanan pembelian yang sudah dibuat.
+4. **Menutup pesanan pembelian:** Aksi ini digunakan untuk menutup pesanan pembelian meskipun barang belum diterima secara keseluruhan. Untuk menutup pesanan pembelian klik menu Pembelian > Pesanan Pembelian. Pada daftar pesanan pembelian, di bagian kanan terdapat kolom `Aksi` dan tombol `Tutup`. Klik tombol `Tutup` untuk menutup pesanan pembelian tersebut.
+5. **Hapus pesanan pembelian:** Pesanan pembelian hanya bisa dihapus jika status `Pending`.
 
 ### Penjelasan Kolom pada Form Pesanan Pembelian
 
@@ -89,8 +94,11 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat laporan penerimaan barang. Klik menu Pembelian > Laporan Penerimaan Barang. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Laporan Penerimaan Barang` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat penerimaan barang:** Cara membuat penerimaan barang yaitu klik menu Pembelian > Laporan Penerimaan Barang. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah penerimaan barang:** Aksi ini untuk merubah informasi penerimaan barang.
+    - Penerimaan barang hanya bisa diubah jika status pembayaran atas faktur pembelian adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah penerimaan barang, cari data yang ingin diubah di daftar laporan penerimaan barang setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus penerimaan barang:** Penerimaan barang dapat dihapus jika status pembayaran terhadap faktur pembelian adalah menunggu pembayaran (`Pending`).
 
 ### Penjelasan Kolom pada Form Laporan Penerimaan Barang
 
@@ -106,9 +114,13 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Jika menggunakan sistem pesanan, maka Faktur Pembelian otomatis terbuat jika membuat Laporan Penerimaan Barang.
-2. Jika tidak menggunakan sistem pesanan, Anda dapat membuat faktur pembelian. Klik menu Pembelian > Faktur Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-3. Jika ada kesalahan untuk merubah data (baik itu menggunakan sistem pesanan atau tanpa pesanan). Cari data yang ingin di ubah dalam `Daftar Faktur Pembelian` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat faktur pembelian:**
+    - Jika menggunakan sistem pesanan, maka Faktur Pembelian otomatis terbuat jika membuat Laporan Penerimaan Barang.
+    - Jika tidak menggunakan sistem pesanan, Anda dapat membuat faktur pembelian. Klik menu Pembelian > Faktur Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah faktur pembelian:** Aksi ini untuk merubah informasi faktur pembelian.
+    - Faktur pembelian dapat dihapus jika status pembayaran adalah belum dibayar (`Pending`).
+    - Untuk merubah faktur pembelian, cari data yang ingin diubah di daftar faktur pembelian setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus faktur pembelian:** Aksi ini untuk menghapus faktur pembelian. Faktur pembelian dapat dihapus jika status pembayaran adalah belum dibayar (`Pending`).
 
 ### Penjelasan Kolom pada Form Faktur Pembelian
 
@@ -133,9 +145,11 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat surat jalan retur. Klik menu Pembelian > Surat Jalan Retur. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah surat jalan retur pembelian sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Surat Jalan Retur` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat surat jalan retur:** Klik menu Pembelian > Surat Jalan Retur. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah surat jalan retur:** Aksi ini untuk merubah informasi surat jalan retur.
+    - Surat jalan retur hanya bisa diubah jika status pembayaran atas nota retur pembelian adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah surat jalan retur, cari data yang ingin diubah di daftar surat jalan retur setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus surat jalan retur:** Aksi ini untuk menghapus surat jalan retur. Surat jalan retur hanya bisa dihapus jika status pembayaran atas nota retur pembelian adalah menunggu pembayaran (`Pending`).
 
 ### Penjelasan Kolom pada Form Surat Jalan Retur Pembelian
 
@@ -152,9 +166,11 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 
 ### Aktivitas Utama
 
-1. Buat retur pembelian. Klik menu Pembelian > Retur Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah retur pembelian sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Retur Pembelian` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
+1. **Buat retur pembelian:** Klik menu Pembelian > Retur Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah retur pembelian:** Aksi ini untuk merubah informasi retur pembelian.
+    - Retur pembelian hanya bisa diubah jika status pembayaran adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah retur pembelian, cari data yang ingin diubah di daftar retur penjualan setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus retur pembelian:** Aksi ini untuk menghapus retur pembelian. Retur pembelian hanya bisa dihapus jika status pembayaran adalah menunggu pembayaran (`Pending`).
 
 ### Penjelasan Kolom pada Form Retur Pembelian
 
@@ -175,14 +191,34 @@ Alur sistem uang muka pembelian pada Refine Accounting adalah sebagai berikut:
 **Note**
 Sistem retur yang kami gunakan adalah pengurangan nilai Hutang.
 
+## Hutang Usaha
+
+**Penjelasan**
+Menu ini digunakan untuk memantau daftar hutang usaha yang masih menunggu pembayaran. Menu ini secara otomatis akan 2 sumber hutang usaha yaitu `Faktur Pembelian` dan `Retur Pembelian`, Anda **tidak dapat menambahkan hutang usaha** di menu ini.
+
+Penjelasan kolom di daftar hutang usaha:
+
+-   `Tanggal` adalah tanggal faktur pembelian / retur pembelian
+-   `Kode Transaksi` adalah nomor nota pembelian / nota retur pembelian
+-   `Faktur Pembelian` adalah nilai faktur pembelian
+-   `Hutang` adalah nilai sisa hutang
+-   `Tanggal Jatuh Tempo` adalah tanggal jatuh tempo hutang usaha
+
+Ada beberapa filter yang dapat Anda gunakan untuk memudahkan pencarian sebagai berikut:
+
+-   `Supplier` saring untuk melihat daftar hutang berdasarkan supplier
+-   `Tanggal` saring untuk melihat daftar hutang dalam periode tertentu
+
 ## Uang Muka Pembelian
 
 ### Aktivitas Utama
 
-1. Buat uang muka pembelian. Klik menu Pembelian > Uang Muka Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
-2. Lakukan pengecekan apakah retur pembelian sudah benar.
-3. Jika ada kesalahan untuk merubah data. Cari data yang ingin di ubah dalam `Daftar Retur Pembelian` setelah itu klik aksi `Ubah` yang terdapat pada ujung kanan data tersebut.
-4. Nilai pada uang muka pembelian dapat digunakan sebagai pembayaran `Faktur Pembelian`. Tekan tombol `gunakan` di kolom aksi untuk melihat daftar faktur pembelian dari Uang Muka tersebut, kemudian pilih faktur pembelian yang ingin dibayarkan.
+1. **Buat uang muka pembelian:** Klik menu Pembelian > Uang Muka Pembelian. Kemudian di ujung kanan atas terdapat tombol `Tambah Data`. Klik untuk menambah data baru.
+2. **Ubah uang muka pembelian:** Aksi ini untuk merubah informasi uang muka pembelian.
+    - Uang muka pembelian hanya bisa diubah jika status pembayaran adalah menunggu pembayaran (`Pending`).
+    - Untuk merubah uang muka pembelian, cari data yang ingin diubah di daftar uang muka pembelian setelah itu klik tombol `Ubah` yang terdapat pada kolom aksi.
+3. **Hapus uang muka pembelian:** Aksi ini untuk menghapus uang muka pembelian. Uang muka pembelian hanya bisa dihapus jika status pembayaran adalah menunggu pembayaran (`Pending`).
+4. **Gunakan uang muka pembelian:** Aksi ini untuk menggunakan uang muka sebagai pembayaran Faktur Pembelian. Tekan tombol `gunakan` di kolom aksi untuk melihat daftar faktur pembelian dari Uang Muka tersebut, kemudian pilih faktur pembelian yang ingin dibayarkan.
 
 ### Penjelasan Kolom pada Form Uang Muka Pembelian
 
