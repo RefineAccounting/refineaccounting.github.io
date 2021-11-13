@@ -8,7 +8,13 @@ title: Mengelola Keuangan
 Modul keuangan digunakan untuk mencatat seluruh arus kas dalam perusahaan. Ada beberapa fitur kunci dalam modul keuangan yang kami sediakan untuk memenuhi kebutuhan perusahaan Anda, fitur-fitur tersebut sebagai berikut:
 
 1. [Transaksi Masuk](#transaksi-masuk)
+    1. [Pelunasan Piutang](#pelunasan-piutang)
+    1. [Pelunasan Uang Muka Penjualan](#pelunasan-uang-muka-penjualan)
+    1. [Pendapatan Lain-Lain](#pendapatan-lain-lain)
 1. [Transaksi Keluar](#transaksi-keluar)
+    1. [Pelunasan Hutang](#pelunasan-hutang)
+    1. [Pelunasan Uang Muka Pembelian](#pelunasan-uang-muka-pembelian)
+    1. [Pembayaran Lain-Lain](#pembayaran-lain-lain)
 1. [Pemindahbukuan](#pemindahbukuan)
 1. [Giro Diterima](#giro-diterima)
 1. [Giro Dibuka](#giro-dibuka)
@@ -31,7 +37,7 @@ Kategori transaksi ini semua dapat Anda input di form transaksi masuk. Untuk car
 ### Pelunasan Piutang
 
 1.  `Jenis Transaksi Masuk` pilih tipe transaksi masuk: Kas / Bank / Giro.
-    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro.
+    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro. Anda dapat melihat bagian `Daftar Giro Diterima` untuk pengelolaan Giro yang sudah dibuat.
 2.  `COA Cash/Bank` pilih akun kas / bank penerima transaksi masuk.
 3.  `Pelanggan` pelanggan yang melakukan pembayaran piutang.
 4.  `Tanggal` adalah tanggal transaksi
@@ -44,7 +50,7 @@ Kategori transaksi ini semua dapat Anda input di form transaksi masuk. Untuk car
 ### Pelunasan Uang Muka Penjualan
 
 1.  `Jenis Transaksi Masuk` pilih tipe transaksi masuk: Kas / Bank / Giro.
-    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro.
+    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro. Anda dapat melihat bagian `Daftar Giro Diterima` untuk pengelolaan Giro yang sudah dibuat.
 2.  `COA Cash/Bank` pilih akun kas / bank penerima transaksi masuk.
 3.  `Pelanggan` pelanggan yang melakukan pembayaran piutang.
 4.  `Tanggal` adalah tanggal transaksi
@@ -54,10 +60,10 @@ Kategori transaksi ini semua dapat Anda input di form transaksi masuk. Untuk car
 8.  Klik tombol `COA Lain-lain` jika di dalam pembayaran ini terdapat biaya-biaya yang menambah atau mengurangi nilai pembayaran pelunasan. Kemudian klik simpan.
 9.  Pastikan pada kolom `Total` adalah nominal pembayaran yang Anda terima di rekening bank / kas Anda.
 
-### Penerimaan Uang dari Transaksi Lainnya
+### Pendapatan Lain-Lain
 
 1.  `Jenis Transaksi Masuk` pilih tipe transaksi masuk: Kas / Bank / Giro.
-    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro.
+    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro. Anda dapat melihat bagian `Daftar Giro Diterima` untuk pengelolaan Giro yang sudah dibuat.
 2.  `COA Cash/Bank` pilih akun kas / bank penerima transaksi masuk.
 3.  `Tanggal` adalah tanggal transaksi
 4.  `Catatan` catatan untuk transaksi tersebut.
@@ -77,7 +83,7 @@ Kategori transaksi ini semua dapat Anda input di form transaksi keluar. Untuk ca
 ### Pelunasan Hutang
 
 1.  `Jenis Transaksi Keluar` pilih tipe transaksi masuk: Kas / Bank / Giro.
-    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro.
+    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro dibuka dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro. Anda dapat melihat bagian `Daftar Giro Dibuka` untuk pengelolaan Giro yang sudah dibuat.
 2.  `COA Cash/Bank` pilih akun kas / bank transaksi keluar.
 3.  `Supplier` supplier yang melakukan pembayaran hutang.
 4.  `Tanggal` adalah tanggal transaksi
@@ -90,7 +96,7 @@ Kategori transaksi ini semua dapat Anda input di form transaksi keluar. Untuk ca
 ### Pelunasan Uang Muka Pembelian
 
 1.  `Jenis Transaksi Masuk` pilih tipe transaksi masuk: Kas / Bank / Giro.
-    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro.
+    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro. Anda dapat melihat bagian `Daftar Giro Dibuka` untuk pengelolaan Giro yang sudah dibuat.
 2.  `COA Cash/Bank` pilih akun kas / bank penerima transaksi masuk.
 3.  `Supplier` supplier yang melakukan pembayaran hutang.
 4.  `Tanggal` adalah tanggal transaksi
@@ -100,10 +106,10 @@ Kategori transaksi ini semua dapat Anda input di form transaksi keluar. Untuk ca
 8.  Klik tombol `COA Lain-lain` jika di dalam pembayaran ini terdapat biaya-biaya yang menambah atau mengurangi nilai pembayaran pelunasan. Kemudian klik simpan.
 9.  Pastikan pada kolom `Total` adalah nominal pembayaran yang Anda keluarkan dari rekening bank / kas Anda.
 
-### Pengeluaran Uang untuk Transaksi Lainnya
+### Pembayaran Lain-Lain
 
 1.  `Jenis Transaksi Masuk` pilih tipe transaksi masuk: Kas / Bank / Giro.
-    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro.
+    -   Jika pembayaran Giro, pada kolom `No. Giro` isi dengan nomor giro diterima dan `Tanggal Jatuh Tempo Giro` isi dengan estimasi tanggal jatuh tempo giro. Anda dapat melihat bagian `Daftar Giro Dibuka` untuk pengelolaan Giro yang sudah dibuat.
 2.  `COA Cash/Bank` pilih akun kas / bank penerima transaksi masuk.
 3.  `Tanggal` adalah tanggal transaksi
 4.  `Catatan` catatan untuk transaksi tersebut.
@@ -119,3 +125,137 @@ Pemindahbukuan atau transfer dapat diinput secara manual melalui transaksi masuk
 -   `Jumlah` adalah nilai dana yang dipindahbukukan.
 -   `Tanggal` adalah tanggal transaksi pindah buku.
 -   `Catatan` untuk menambahkan catatan transaksi.
+
+## Giro Diterima
+
+### Aktivitas Utama
+
+1. Melihat daftar giro yang pernah dibuat.
+2. Melakukan pencairan atau pembatalan giro
+
+### Melihat Daftar Giro
+
+1. Klik menu `Keuangan` kemudian pilih submenu `Giro Diterima` untuk melihat semua daftar giro yang pernah Anda terima.
+2. Dalam daftar giro ini ada menu pencarian yang dapat Anda gunakan. Kolom pencarian yang ada sebagai berikut:
+    - `No. Dokumen` untuk mencari berdasarkan nomor giro
+    - `Pelanggan` untuk mencari berdasarkan pelanggan yang melakukan pembayaran giro
+    - `Tanggal` untuk mencari berdasarkan tanggal giro diterima
+    - `Tanggal Jatuh Tempo` untuk mencari berdasarkan tanggal giro jatuh tempo
+3. Dalam daftar giro juga ada beberapa kolom informasi sebagai berikut:
+    - `Tanggal Dibuat` adalah tanggal transaksi giro dibuat
+    - `Tanggal Jatuh Tempo` adalah tanggal giro jatuh tempo
+    - `No. Dokumen` adalah nomor dokumen giro yang dibuat otomatis oleh sistem
+    - `Bank Tujuan` adalah bank penerima pencairan giro
+    - `Informasi Pelanggan` berisi informasi pelanggan yang melakukan pembayaran giro
+    - `Jumlah` adalah nilai giro
+    - `Status` adalah status giro. Ada 3 jenis status yaitu `Menunggu`, `Cair` & `Dibatalkan`
+
+### Melakukan Pencairan Giro atau Pembatalan Giro
+
+1. Masuk ke menu Giro Diterima
+2. Pada kolom aksi klik tombol `Ubah Status` kemudian akan muncul popup dengan tombol `Cairkan Giro` atau `Batalkan Giro`
+3. Untuk mencairkan Giro, tanggal jatuh tempo harus kurang dari atau sama dengan (<=) tanggal hari ini.
+4. Giro yang sudah dicairkan secara otomatis akan membuat transaksi bank masuk dengan nominal giro tersebut.
+
+## Giro Dibuka
+
+### Aktivitas Utama
+
+1. Melihat daftar giro yang pernah dibuat.
+2. Melakukan pencairan atau pembatalan giro
+
+### Melihat Daftar Giro
+
+1. Klik menu `Keuangan` kemudian pilih submenu `Giro Dibuka` untuk melihat semua daftar giro yang pernah Anda buka.
+2. Dalam daftar giro ini ada menu pencarian yang dapat Anda gunakan. Kolom pencarian yang ada sebagai berikut:
+    - `No. Dokumen` untuk mencari berdasarkan nomor giro
+    - `Supplier` untuk mencari berdasarkan supplier
+    - `Tanggal` untuk mencari berdasarkan tanggal giro dibuka
+    - `Tanggal Jatuh Tempo` untuk mencari berdasarkan tanggal giro jatuh tempo
+3. Dalam daftar giro juga ada beberapa kolom informasi sebagai berikut:
+    - `Tanggal Dibuat` adalah tanggal transaksi giro dibuat
+    - `Tanggal Jatuh Tempo` adalah tanggal giro jatuh tempo
+    - `No. Dokumen` adalah nomor dokumen giro yang dibuat otomatis oleh sistem
+    - `Bank Sumber` adalah bank sumber pembayaran giro
+    - `Informasi Supplier` berisi informasi supplier yang melakukan pembayaran giro
+    - `Jumlah` adalah nilai giro
+    - `Status` adalah status giro. Ada 3 jenis status yaitu `Menunggu`, `Cair` & `Dibatalkan`
+
+### Melakukan Pencairan Giro atau Pembatalan Giro
+
+1. Masuk ke menu Giro Dibuka
+2. Pada kolom aksi klik tombol `Ubah Status` kemudian akan muncul popup dengan tombol `Cairkan Giro` atau `Batalkan Giro`
+3. Untuk mencairkan Giro, tanggal jatuh tempo harus kurang dari atau sama dengan (<=) tanggal hari ini.
+4. Giro yang sudah dicairkan secara otomatis akan membuat transaksi bank keluar dengan nominal giro tersebut.
+
+## Mutasi Kas
+
+### Aktivitas Utama
+
+1. Melihat daftar mutasi & saldo kas.
+2. Merubah transaksi kas masuk atau keluar.
+3. Menghapus transaksi kas masuk atau keluar.
+4. Mencetak bukti kas masuk atau keluar.
+
+### Melihat Daftar Mutasi Kas
+
+1. Untuk melihat daftar mutasi kas klik menu `Keuangan` kemudian submenu `Mutasi Kas`
+2. Kemudian akan tampil daftar transaksi kas yang pernah Anda buat.
+3. Di bagian atas tabel daftar transaksi terdapat nilai saldo kas. Nilai saldo adalah total dari daftar transaksi yang muncul di tabel.
+4. Pada menu pencarian ada beberapa kolom yang dapat Anda gunakan sebagai berikut:
+    - `No Dokumen` untuk mencari berdasarkan nomor dokumen kas
+    - `No COA` untuk mencari transaksi dengan nomor COA tersebut
+    - `Kas` untuk mencari berdasarkan jenis kas yang Anda miliki
+    - `Tanggal` untuk mencari berdasarkan tanggal kas dibuat.
+    - `Catatan` untuk mencari berdasarkan catatan pada transaksi
+
+### Merubah transaksi kas
+
+1. Masuk ke halaman `Mutasi Kas`
+2. Pada daftar transaksi, klik tombol `Ubah` yang ada pada kolom Aksi.
+
+### Menghapus transaksi
+
+1. Masuk ke halaman `Mutasi Kas`
+2. Pada daftar transaksi, klik tombol `Hapus` yang ada pada kolom Aksi.
+
+### Mencetak transaksi
+
+1. Masuk ke halaman `Mutasi Kas`
+2. Pada daftar transaksi, klik tombol `Cetak` yang ada pada kolom Aksi.
+
+## Mutasi Bank
+
+### Aktivitas Utama
+
+1. Melihat daftar mutasi & saldo bank.
+2. Merubah transaksi bank masuk atau keluar.
+3. Menghapus transaksi bank masuk atau keluar.
+4. Mencetak bukti bank masuk atau keluar.
+
+### Melihat Daftar Mutasi Bank
+
+1. Untuk melihat daftar mutasi bank klik menu `Keuangan` kemudian submenu `Mutasi Bank`
+2. Kemudian akan tampil daftar transaksi bank yang pernah Anda buat.
+3. Di bagian atas tabel daftar transaksi terdapat nilai saldo bank. Nilai saldo adalah total dari daftar transaksi yang muncul di tabel.
+4. Pada menu pencarian ada beberapa kolom yang dapat Anda gunakan sebagai berikut:
+    - `No Dokumen` untuk mencari berdasarkan nomor dokumen bank
+    - `No COA` untuk mencari transaksi dengan nomor COA tersebut
+    - `Bank` untuk mencari berdasarkan jenis bank yang Anda miliki
+    - `Tanggal` untuk mencari berdasarkan tanggal bank dibuat.
+    - `Catatan` untuk mencari berdasarkan catatan pada transaksi
+
+### Merubah transaksi bank
+
+1. Masuk ke halaman `Mutasi Bank`
+2. Pada daftar transaksi, klik tombol `Ubah` yang ada pada kolom Aksi.
+
+### Menghapus transaksi
+
+1. Masuk ke halaman `Mutasi Bank`
+2. Pada daftar transaksi, klik tombol `Hapus` yang ada pada kolom Aksi.
+
+### Mencetak transaksi
+
+1. Masuk ke halaman `Mutasi Bank`
+2. Pada daftar transaksi, klik tombol `Cetak` yang ada pada kolom Aksi.
