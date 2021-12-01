@@ -52,3 +52,14 @@ Sebelum masuk ke penjelasan laporan kami akan menjelaskan cara kerja sistem lapo
 1. **Kartu persediaan** adalah laporan persediaan berdasarkan daftar transaksinya yang terjadi (pembelian, penjualan, retur, koreksi, & transfer). Ada 2 jenis laporan yaitu basic (tanpa nominal rupiah) dan akuntansi (dengan nominal rupiah). Laporan ini juga dapat difilter untuk salah satu produk tertentu.
 1. **Mutasi persediaan** adalah laporan mutasi persediaan yaitu akumulasi saldo awal, penambahan dan pengurangan dan menampilkan saldo akhir persediaan. Ada 2 jenis laporan yaitu basic (tanpa nominal rupiah) dan akuntansi (dengan nominal rupiah). Laporan ini juga dapat difilter untuk salah satu gudang tertentu.
 1. **Kartu persediaan di gudang** adalah laporan kartu persediaan yang dapat difilter per gudang.
+
+## Laporan Akuntansi
+
+1. **Laporan Jurnal Memorial** adalah laporan daftar jurnal memorial yang pernah dibuat dalam periode tersebut.
+1. **Buku Besar** adalah daftar buku besar dari semua transaksi dalam periode tersebut.
+1. **Trial Balance** adalah laporan neraca saldo dari periode tersebut.
+
+## Laporan Laba Rugi
+
+1. **Laporan Laba Rugi** adalah laporan laba rugi dalam periode tersebut.
+1. **Laporan Posisi Keuangan** adalah ringkasan dari kondisi aset, liabilitas, serta ekuitas dalam periode tertentu. Nilai akumulasi saldo laba rugi tahun berjalan hanya dapat terakumulasi jika periode sudah dikunci.
