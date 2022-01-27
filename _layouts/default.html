@@ -17,6 +17,7 @@
             type="text/css"
             href="{{ site.baseurl }}/style.css"
         />
+
         <link
             rel="alternate"
             type="application/rss+xml"
@@ -28,55 +29,138 @@
     </head>
 
     <body>
-        <div id="offer" class="offer">Berencana memulai software keuangan Anda sendiri? <br /><a href="https://refineaccounting.com/fitur-kami">Mulai Sekarang</a></div>
-        <div id="side-nav">
-            <ul>
-                <li><a href="/how-to-start">Memulai</a>
-                    <ul>
-                        <li><a href="/how-to-start#mempersiapkan-master-data">Persiapan Data Master</a></li>
-                        <li><a href="/how-to-start#saldo-awal">Persiapan Saldo Awal</a></li>
-                        <li>Pembuatan Hak Akses & Admin</li>
+        <div id="side-nav" class="nav">
+            <a href="{{ site.baseurl }}/" class="site-avatar hide-tablet"
+                ><img src="{{ site.avatar }}" class="logo"
+            /></a>
+            <ul class="main-menu">
+                <li class="expandable-menu">
+                    Memulai
+                    <ul class="child-menu">
+                        <li>
+                            <a href="/how-to-start">Persiapan Data Master</a>
+                        </li>
+                        <li>
+                            <a href="/how-to-start#saldo-awal"
+                                >Persiapan Saldo Awal</a
+                            >
+                        </li>
+                        <li>
+                            <a href="/how-to-start#kelola-admin"
+                                >Pembuatan Hak Akses & Admin</a
+                            >
+                        </li>
                     </ul>
                 </li>
-                <li>Mengelola
-                    <ul>
-                        <li><a href="/pembelian">Kelola Pembelian</a>
-                            <ul>
-                                <li><a href="/pembelian#pesanan-pembelian">Pesananan Pembelian</a></li>
-                                <li><a href="/pembelian#laporan-penerimaan-barang">Penerimaan Barang</a></li>
-                                <li><a href="/pembelian#faktur-pembelian">Faktur Pembelian</a></li>
-                                <li><a href="/pembelian#surat-jalan-retur-pembelian">Surat Jalan Retur Pembelian</a></li>
-                                <li><a href="/pembelian#retur-pembelian">Retur Pembelian</a></li>
+                <li class="expandable-menu">
+                    Mengelola
+                    <ul class="child-menu">
+                        <li>
+                            Kelola Pembelian
+                            <ul class="child-menu">
+                                <li>
+                                    <a href="/pembelian#pesanan-pembelian"
+                                        >Pesananan Pembelian</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/pembelian#laporan-penerimaan-barang"
+                                        >Penerimaan Barang</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/pembelian#faktur-pembelian"
+                                        >Faktur Pembelian</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/pembelian#surat-jalan-retur-pembelian"
+                                        >Surat Jalan Retur Pembelian</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/pembelian#retur-pembelian"
+                                        >Retur Pembelian</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="/penjualan">Kelola Penjualan</a>
-                            <ul>
-                                <li><a href="/penjualan#pesanan-penjualan">Pesananan Penjualan</a></li>
-                                <li><a href="/penjualan#surat-jalan">Surat Jalan</a></li>
-                                <li><a href="/penjualan#faktur-penjualan">Faktur Penjualan</a></li>
-                                <li><a href="/penjualan#penerimaan-barang-retur-penjualan">Penerimaan Barang Retur Penjualan</a></li>
-                                <li><a href="/penjualan#retur-penjualan">Retur Penjualan</a></li>
+                        <li>
+                            Kelola Penjualan
+                            <ul class="child-menu">
+                                <li>
+                                    <a href="/penjualan#pesanan-penjualan"
+                                        >Pesananan Penjualan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/penjualan#surat-jalan"
+                                        >Surat Jalan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/penjualan#faktur-penjualan"
+                                        >Faktur Penjualan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/penjualan#penerimaan-barang-retur-penjualan"
+                                        >Penerimaan Barang Retur Penjualan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/penjualan#retur-penjualan"
+                                        >Retur Penjualan</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="/persediaan">Kelola Persediaan</a>
-                            <ul>
-                                <li><a href="/persediaan#daftar-persediaan">Daftar Persediaan</a></li>
-                                <li><a href="/persediaan#mutasi-persediaan">Mutasi Persediaan</a></li>
-                                <li><a href="/persediaan#kartu-persediaan">Kartu Persediaan</a></li>
-                                <li><a href="/persediaan#koreksi-persediaan">Koreksi Persediaan</a></li>
-                                <li><a href="/persediaan#transfer-persediaan">Transfer Persediaan</a></li>
+                        <li>
+                            Kelola Persediaan
+                            <ul class="child-menu">
+                                <li>
+                                    <a href="/persediaan#daftar-persediaan"
+                                        >Daftar Persediaan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/persediaan#mutasi-persediaan"
+                                        >Mutasi Persediaan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/persediaan#kartu-persediaan"
+                                        >Kartu Persediaan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/persediaan#koreksi-persediaan"
+                                        >Koreksi Persediaan</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/persediaan#transfer-persediaan"
+                                        >Transfer Persediaan</a
+                                    >
+                                </li>
                             </ul>
                         </li>
-                        <li>Kelola Keuangan
-                            <ul>
-                                <li>Transaksi Masuk
+                        <li>
+                            Kelola Keuangan
+                            <ul class="child-menu">
+                                <li>
+                                    Transaksi Masuk
                                     <ul>
                                         <li>Pelunasan Piutang</li>
                                         <li>Pelunasan Uang Muka Penjualan</li>
                                         <li>Pelunasan Coa Lain-lain</li>
                                     </ul>
                                 </li>
-                                <li>Transaksi Keluar
+                                <li>
+                                    Transaksi Keluar
                                     <ul>
                                         <li>Pembayaran Hutang</li>
                                         <li>Pembayaran Uang Muka Pembelian</li>
@@ -93,56 +177,71 @@
                         </li>
                     </ul>
                 </li>
-                <li>Akuntansi & Laporan
-                    <ul>
+                <li class="expandable-menu">
+                    Laporan
+                    <ul class="child-menu">
                         <li>Jurnal Memorial</li>
                         <li>Kunci & Tutup Periode</li>
                         <li>Laporan Periode</li>
                     </ul>
                 </li>
             </ul>
+            <small
+                ><a href="https://refineaccounting.com"
+                    >www.refineaccounting.com</a
+                ></small
+            >
         </div>
-        <div class="wrapper-masthead">
-            <div class="container">
-                <header class="masthead clearfix">
+        <div class="main-container">
+            <div class="wrapper-masthead show-tablet">
+                <div class="container">
                     <a href="{{ site.baseurl }}/" class="site-avatar"
-                        style="display: block;"><img src="{{ site.avatar }}" class="logo"
+                        ><img src="{{ site.avatar }}" class="logo"
                     /></a>
-                    <p class="site-description">{{ site.description }}</p>
-
-                    <!-- <nav>
-                        <a href="{{ site.baseurl }}/">Blog</a>
-                        <a href="{{ site.baseurl }}/about">About</a> -->
-                    </nav>
-                </header>
+                    <button id="toogle-menu" class="show-sm">menu</button>
+                </div>
             </div>
-        </div>
 
-        <div id="main" role="main" class="container">{{ content }}</div>
+            <div id="main" role="main" class="container">{{ content }}</div>
 
-        <div class="wrapper-footer">
-            <div class="container">
-                <footer class="footer">{% include svg-icons.html %}</footer>
+            <div class="wrapper-footer">
+                <div class="container">
+                    <footer class="footer">{% include svg-icons.html %}</footer>
+                </div>
             </div>
         </div>
 
         {% include analytics.html %}
 
         <script>
-            let offerElm = document.getElementById("offer");
-            document.body.onscroll = function() {
-                console.log("aa", document.documentElement.scrollTop);
-                let scrollTop = document.documentElement.scrollTop;
-                console.log(offerElm.classList.contains("show"), scrollTop > 150);
-                if (scrollTop > 150 && !offerElm.classList.contains("show")) {
-                    console.log('yesss');
-                    offerElm.classList.toggle("show", true)
-                }
+            // let offerElm = document.getElementById("offer");
+            // document.body.onscroll = function () {
+            //     let scrollTop = document.documentElement.scrollTop;
+            //     if (scrollTop > 150 && !offerElm.classList.contains("show")) {
+            //         console.log("yesss");
+            //         offerElm.classList.toggle("show", true);
+            //     }
 
-                if (scrollTop < 150 && offerElm.classList.contains("show")) {
-                    offerElm.classList.toggle("show", false);
-                }
-            }
+            //     if (scrollTop < 150 && offerElm.classList.contains("show")) {
+            //         offerElm.classList.toggle("show", false);
+            //     }
+            // };
+
+            let expandableMenu =
+                document.getElementsByClassName("expandable-menu");
+            [...expandableMenu].forEach((elm) => {
+                elm.addEventListener("click", (event) => {
+                    event.target
+                        .querySelector(".child-menu")
+                        .classList.toggle("active");
+                });
+            });
+
+            let toogleMenu = document.getElementById("toogle-menu");
+            toogleMenu.addEventListener("click", (event) => {
+                let menu = document.getElementById("side-nav");
+                menu.classList.toggle("show");
+            });
         </script>
     </body>
 </html>
