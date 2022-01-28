@@ -9,7 +9,7 @@ Di halaman ini kami akan memandu Anda untuk mengelola data-data pembelian. Berik
 mengelola data pembelian dengan Refine Accounting
 
 1. [Pesanan Pembelian](#pesanan-pembelian)
-1. [Laporan Penerimaan Barang](#penerimaan-barang)
+1. [Laporan Penerimaan Barang](#laporan-penerimaan-barang)
 1. [Faktur Pembelian](#faktur-pembelian)
 1. [Surat Jalan Retur](#surat-jalan-retur-pembelian)
 1. [Retur Pembelian](#retur-pembelian)
