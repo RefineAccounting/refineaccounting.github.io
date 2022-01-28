@@ -20,15 +20,15 @@ penjelasan memulai Refine Accounting.
         - [Kategori Produk](#kategori-produk)
         - [Kelola Produk](#kelola-produk)
         - [Konversi Satuan Produk](#konversi-satuan-produk)
-        - [Grup Produk / Parcel](#grup-produk-parcel)
+        - [Grup Produk / Parcel](#grup-produk--parcel)
         - [Harga Spesial](#harga-spesial)
 1. [Saldo awal](#saldo-awal)
-    1. [Saldo awal Kas & Bank](#saldo-awal-kas-bank)
+    1. [Saldo awal Kas & Bank](#saldo-awal-kas--bank)
     1. [Saldo awal Hutang](#saldo-awal-hutang)
     1. [Saldo awal Piutang](#saldo-awal-piutang)
     1. [Saldo awal Persediaan](#saldo-awal-persediaan)
-    1. [Saldo awal Uang Muka Pembelian & Penjualan](#saldo-awal-uang-muka-pemnbelian-penjualan)
-    1. [Saldo awal Giro Dibuka & Diterima](#saldo-awal-giro-dibuka-diterima)
+    1. [Saldo awal Uang Muka Pembelian & Penjualan](#saldo-awal-uang-muka-pemnbelian--penjualan)
+    1. [Saldo awal Giro Dibuka & Diterima](#saldo-awal-giro-dibuka--diterima)
 
 ## Mempersiapkan Master Data
 
