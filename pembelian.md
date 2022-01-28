@@ -11,7 +11,7 @@ mengelola data pembelian dengan Refine Accounting
 1. [Pesanan Pembelian](#pesanan-pembelian)
 1. [Laporan Penerimaan Barang](#penerimaan-barang)
 1. [Faktur Pembelian](#faktur-pembelian)
-1. [Surat Jalan Retur](#surat-jalan-retur)
+1. [Surat Jalan Retur](#surat-jalan-retur-pembelian)
 1. [Retur Pembelian](#retur-pembelian)
 1. [Hutang Usaha](#hutang-usaha)
 1. [Uang Muka Pembelian](#uang-muka-pembelian)
