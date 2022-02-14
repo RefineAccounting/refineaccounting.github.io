@@ -67,6 +67,38 @@ Untuk mengisi data kas & bank sebagai berikut:
 
 Pengisian saldo awal kas & bank akan dijelaskan pada bagian [Saldo Awal](#saldo-awal)
 
+### Gudang
+
+Secara bawaan kami sudah membuat gudang yaitu Gudang Utama. Jika Anda memiliki lebih dari satu gudang, maka Anda dapat membuat gudang baru. Untuk mengisi data gudang sebagai berikut:
+
+1. Klik menu `Master > Gudang`.
+2. Di pojok kanan atas ada tombol `Tambah Data`.
+3. Berikut penjelasan kolom data gudang:
+    - Nama gudang (Wajib diisi) .
+    - Catatan berisi informasi tambahan gudang tersebut, tidak akan muncul di menu lain, hanya di daftar Gudang saja.
+4. Setelah selesai mengisi semua klik `Simpan`.
+
+### Tenaga Penjual
+
+Dalam menu penjualan mungkin Anda memiliki tenaga penjual dan ingin mencatat nama tenaga penjual tersebut dalam setiap transaksi penjualan. Di menu ini Anda dapat menambahkan tenaga penjual yang nantinya dapat dihubungkan ke suatu data pelanggan. Untuk mengisi data tenaga penjual sebagai berikut:
+
+1. Klik menu `Master > Tenaga Penjual`.
+2. Di pojok kanan atas ada tombol `Tambah Data`.
+3. Berikut penjelasan kolom data tenaga penjual:
+    - Nama tenaga penjual (Wajib diisi) .
+    - Catatan berisi informasi tambahan tenaga penjual tersebut, tidak akan muncul di menu lain, hanya di daftar Tenaga Penjual saja.
+4. Setelah selesai mengisi semua klik `Simpan`.
+
+### Kategori Supplier
+
+Anda dapat mengkategorikan supplier jika dibutuhkan. Di menu ini Anda dapat membuat master kategori supplier yang nantinya dapat Anda pilih ketika Anda membuat master supplier. Untuk input melalui menu utama caranya sebagai berikut:
+
+1. Klik menu `Master > Supplier > Kategori Supplier`.
+2. Di pojok kanan atas ada tombol `Tambah Data`.
+3. Berikut penjelasan kolom data kategori supplier:
+    - Nama (Wajib diisi) kategori supplier.
+4. Setelah selesai mengisi semua klik `Simpan`. Setelah di simpan silahkan masuk ke data kategori supplier ini akan muncul pada kolom Kategori Supplier di Form Supplier.
+
 ### Supplier
 
 Data supplier umumnya digunakan di modul Pembelian dan Hutang. Cara input data Supplier ada 2 pilihan, pertama melalui menu tampilan utama atau import melalui excel. Untuk import melalui excel silahkan download [format excel supplier disini](#). Untuk input melalui menu utama caranya sebagai berikut:
@@ -88,6 +120,16 @@ Data supplier umumnya digunakan di modul Pembelian dan Hutang. Cara input data S
 -   [Video tutorial menambahkan supplier melalui excel](https://youtu.be/WiGOYNRph5E)
 -   [Video tutorial menambahkan supplier melalui tampilan utama](https://youtu.be/WiGOYNRph5E)
 
+### Kategori Pelanggan
+
+Anda dapat mengkategorikan pelanggan jika dibutuhkan. Di menu ini Anda dapat membuat master kategori pelanggan yang nantinya dapat Anda pilih ketika Anda membuat master pelanggan. Untuk input melalui menu utama caranya sebagai berikut:
+
+1. Klik menu `Master > Pelanggan > Kategori Pelanggan`.
+2. Di pojok kanan atas ada tombol `Tambah Data`.
+3. Berikut penjelasan kolom data kategori pelanggan:
+    - Nama (Wajib diisi) kategori pelanggan.
+4. Setelah selesai mengisi semua klik `Simpan`. Setelah di simpan silahkan masuk ke data kategori pelanggan ini akan muncul pada kolom Kategori Pelanggan di Form Pelanggan.
+
 ### Pelanggan
 
 Data pelanggan umumnya digunakan di modul Penjualan dan Piutang. Cara input data Pelanggan ada 2 pilihan, pertama melalui menu tampilan utama atau import melalui excel. Untuk import melalui excel silahkan download [format excel pelanggan disini](#). Untuk input melalui menu utama caranya sebagai berikut:
@@ -99,13 +141,15 @@ Data pelanggan umumnya digunakan di modul Penjualan dan Piutang. Cara input data
     - Alamat (Wajib diisi): sebagai tambahan informasi akan muncul di modul pembelian & ketika cetak dokumen menu pembelian.
     - No. Telepon (Wajib diisi): sebagai tambahan informasi akan muncul di modul pembelian & ketika cetak dokumen.
     - Email, Website, Kelurahan, Provinsi, Kecamatan, Provinsi, Negara, Zip code: sebagai pelengkap informasi pelanggan
-    - Kategori Supplier & Deskripsi: sebagai tambahan informasi.
+    - Kategori Pelanggan & Deskripsi: sebagai tambahan informasi.
     - PIC List: sebagai tambahan informasi data PIC dari perusahaan pelanggan.
+    - Tenaga Penjual: Pilih tenaga penjual untuk pelanggan ini.
 4. Setelah selesai mengisi semua klik `Simpan`.
 
 **Catatan Penting!**
 
-Pada pelanggan tidak ada kolom pilihan PKP atau NON PKP. Untuk pengaturan PPN & NON PPN pada penjualan silahkan melihat penjelasan di [modul penjualan](#).
+1. Pada pelanggan tidak ada kolom pilihan PKP atau NON PKP. Untuk pengaturan PPN & NON PPN pada penjualan silahkan melihat penjelasan di [modul penjualan](#).
+2. 1 (Satu) pelanggan hanya bisa memiliki 1 (Satu) tenaga penjual. Perubahan tenaga penjual akan merubah informasi tenaga penjual di modul penjualan untuk **data selanjutnya**, sedangkan data lama tidak akan berubah.
 
 **Video Tutorial**
 
@@ -216,6 +260,18 @@ Cara input harga spesial produk sebagai berikut:
     - Jumlah Diskon (Wajib diisi): Rupiah / % discount
 
 Anda bisa input beberapa kali harga spesial, secara otomatis pada menu penjualan akan menghitung harga spesial jika memenuhi semua kriteria yang sudah Anda terapkan.
+
+### Metode Pembayaran
+
+Dalam menu penjualan sering sekali melakukan pembayaran yang mempengaruhi harga jual. Salah satu contoh kasus adalah pembayaran menggunakan kartu kredit / kartu debit akan ada charge sebesar +5%. Di menu metode pembayaran ini Anda dapat membuat data metode pembayaran sendiri dengan penjelasan kolom sebagai berikut:
+
+-   Nama metode pembayaran (Wajib diisi).
+-   Rentang jatuh tempo tambahan: adalah tambahan durasi (hari) jatuh tempo di menu pesanan penjualan & penjualan.
+-   Tipe: adalah jenis tambahan biaya. Ada 2 tipe yaitu % atau jumlah tetap.
+-   Biaya tambahan: adalah nominal tambahan biaya atas metode pembayaran ini.
+-   Tampilkan sebagai biaya tambahan: adalah pengaturan bagaimana menampilkan informasi biaya tambahan ini.
+
+Setelah mengisi kolom-kolom tersebut klik `Simpan`. Metode pembayaran ini akan muncul pada menu faktur penjualan dan muncul juga sebagai salah satu parameter pada menu harga spesial produk.
 
 ## Saldo Awal
 
