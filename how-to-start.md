@@ -13,7 +13,7 @@ penjelasan memulai Refine Accounting.
     1. [COA](#coa)
     1. [Kas & Bank](#kas-&-bank)
     1. [Supplier](#supplier)
-    1. [Customer](#customer)
+    1. [Customer](#pelanggan)
     1. [Gudang](#gudang)
     1. [Produk](#produk)
         - [Satuan Produk](#satuan-produk)
